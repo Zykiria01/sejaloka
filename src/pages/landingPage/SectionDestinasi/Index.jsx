@@ -2,7 +2,7 @@
 
 const SectionDestinasi = () => {
     return (
-        <section id="Destinasi" className="bg-green-200-400 h-80">SectionDesatinasi</section>
+        <section id="Destinasi" className="bg-white-200 h-80 ">SectionDesatinasi</section>
       )
     }
 
