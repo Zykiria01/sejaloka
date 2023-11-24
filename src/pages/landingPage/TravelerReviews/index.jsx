@@ -1,53 +1,43 @@
 import Logo2 from '../../../assets/image/logo2.jpg';
-
 const TravelerReviews = () => {
   return (
     <section id='Traveler-Reviews' className='bg-white'>
-      <div className='flex flex-wrap min-h-full items-center justify-center bg-white'>
-        <div className='mx-auto flex w-full text-center flex-col gap-6 my-5'>
-          <h1 className='font-poppins text-2xl font-semibold sm-text-2xl text-amber-400'>
-            Pengalaman Yang Tak Terlupakan
+      <div className='flex flex-wrap min-h-full items-center justify-center bg-white py-8 '>
+        <div className='mx-auto flex w-full text-center flex-col gap-6 '>
+          <h1 className='font-poppins text-2xl font-semibold sm-text-2xl text-black mb-10'>
+            Travel Reviews
           </h1>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
-          <div className='group relative items-center justify-center overflow-hidden cursor-pointer rounded-2xl'>
-            <div className='h-70 w-72'>
-              <img className='w-full object-cover' src={Logo2} alt='' />
-            </div>
-            <div className='absolute inset-0  bg-gradiant-to-b form-transparent via-transparent'>
-              <div className='absolute inset-0 flex flex-col items-center justfify-center px-4 text-center translate-y-[100%] group-hover:translate-y-20 transition-all'>
-                <button className='rounded-full bg-orange-800 py-2 px-3.5 text-sm capitalize text-white justify-beetwen'>
-                  See More
-                </button>
+        <div className='flex flex wrap gap-4 px-[133px] justify-beetwen'>
+            <div className="h-[400px] shadow-lg bg-amber-400 w-1/3 ">
+              <div className="">
+                <img className="overflow-hidden h-[150px] w-full mb-8" src={Logo2} alt="" />
+              </div>
+              <div>
+                <h5 className='text-xl md:text-2xl text-white font-semibold font-poppins mt-3 text-center mb-9'>Dicoding</h5>
+                <p className='text-center text-white font-thin font-serif'>Lokasi strategis, lengkap dan detail akan penjelasan tiap peninggalan bersejarahnya</p>
               </div>
             </div>
-          </div>
-          <div className='group relative items-center justify-center overflow-hidden cursor-pointer rounded-2xl'>
-            <div className='h-70 w-72'>
-              <img className='w-full object-cover' src={Logo2} alt='' />
-            </div>
-            <div className='absolute inset-0  bg-gradiant-to-b form-transparent via-transparent'>
-              <div className='absolute inset-0 flex flex-col items-center justfify-center px-4 text-center translate-y-[100%] group-hover:translate-y-20 transition-all'>
-                <button className='rounded-full bg-orange-800 py-2 px-3.5 text-sm capitalize text-white justify-beetwen'>
-                  See More
-                </button>
+            <div className="h-[400px] shadow-lg bg-amber-400 w-1/3 ">
+              <div className="">
+                <img className="overflow-hidden h-[150px] w-full mb-8" src={Logo2} alt="" />
+              </div>
+              <div>
+                <h5 className='text-xl md:text-2xl text-white font-semibold font-poppins mt-3 text-center mb-9'>Dicoding</h5>
+                <p className='text-center text-white font-thin font-serif'>Lokasi strategis, lengkap dan detail akan penjelasan tiap peninggalan bersejarahnya</p>
               </div>
             </div>
-          </div>
-          <div className='group relative items-center justify-center overflow-hidden cursor-pointer rounded-2xl'>
-            <div className='h-70 w-72'>
-              <img className='w-full object-cover' src={Logo2} alt='' />
-            </div>
-            <div className='absolute inset-0  bg-gradiant-to-b form-transparent via-transparent'>
-              <div className='absolute inset-0 flex flex-col items-center justfify-center px-4 text-center translate-y-[100%] group-hover:translate-y-20 transition-all'>
-                <button className='rounded-full bg-orange-800 py-2 px-3.5 text-sm capitalize text-white justify-beetwen'>
-                  See More
-                </button>
+            <div className="h-[400px] shadow-lg bg-amber-400 w-1/3 ">
+              <div className="">
+                <img className="overflow-hidden h-[150px] w-full mb-8" src={Logo2} alt="" />
+              </div>
+              <div>
+                <h5 className='text-xl md:text-2xl text-white font-semibold font-poppins mt-3 text-center mb-9'>Dicoding</h5>
+                <p className='text-center text-white font-thin font-serif'>Lokasi strategis, lengkap dan detail akan penjelasan tiap peninggalan bersejarahnya</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 };
