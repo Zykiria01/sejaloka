@@ -3,7 +3,7 @@ import Logo2 from '../../../assets/image/logo2.jpg';
 const SectionPengalaman = () => {
   return (
     <section id='Pengalaman'>
-      <div className='flex flex-wrap min-h-full items-center justify-center bg-white'>
+      <div className='flex flex-wrap min-h-full items-center justify-center bg-white pb-10'>
         <div className='mx-auto flex w-full text-center flex-col gap-6 my-5'>
           <h1 className='font-poppins text-2xl font-semibold sm-text-2xl text-amber-400'>
             Pengalaman Yang Tak Terlupakan
