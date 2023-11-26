@@ -4,6 +4,7 @@ import Header from './Header/Index';
 import SectionDestinasi from './SectionDestinasi/Index';
 import SectionPengalaman from './SectionPengalaman/Index';
 import TravelerReviews from './TravelerReviews';
+import Footer from '../../component/Footer';
 
 const landingPage = () => {
   return (
@@ -14,6 +15,7 @@ const landingPage = () => {
         <SectionPengalaman />
         <SectionDestinasi />
         <TravelerReviews />
+        <Footer />
       </MainLayout>
     </>
   );
