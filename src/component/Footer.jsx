@@ -2,9 +2,9 @@ import LogoWhite from '../assets/image/Sejaloka-Logogram-Only-White.png';
 
 const Footer = () => {
   return (
-    <footer className='footer p-10 bg-base-300 text-base-content'>
+    <footer className='footer p-10 bg-orange-800 text-black'>
       <nav>
-        <img className='w-1/5 mx-auto' src={LogoWhite} />
+        <img className='w-40 mx-auto' src={LogoWhite} />
       </nav>
       <nav>
         <header className='footer-title'>Company</header>

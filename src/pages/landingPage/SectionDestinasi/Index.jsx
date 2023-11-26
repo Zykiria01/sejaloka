@@ -3,7 +3,7 @@ import Logo2 from '../../../assets/image/logo2.jpg';
 const SectionDestinasi = () => {
   return (
     <section id='Destinasi'>
-      <div className='flex flex-wrap  items-center justify-center bg-amber-400 my-5 py-10'>
+      <div className='flex flex-wrap  items-center justify-center bg-amber-400 py-10'>
         <div className='mx-auto flex w-full text-center flex-col gap-6 '>
           <h1 className='font-poppins text-2xl font-semibold sm-text-2xl text-white'>
             Destinasi Yang Luar Biasa
