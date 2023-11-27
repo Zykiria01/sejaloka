@@ -1,6 +1,7 @@
 import NavButton from "./NavButton";
 import SignButton from "./SignButton";
 import Logo1 from "../assets/image/logo1.png"
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -10,11 +11,12 @@ const Navbar = () => {
             <img className="w-30 h-10 items-center"src={Logo1} alt="" />
         </div>
         <ul className="flex gap-10 ">
-            <NavButton href="" >Beranda</NavButton>
-            <NavButton href="#Pengalaman">Pengalaman</NavButton>
-            <NavButton href="#Destinasi">Destinasi</NavButton>
+            <NavButton href="/" >Beranda</NavButton>
+            <NavButton href="/#Pengalaman">Pengalaman</NavButton>
+            <NavButton href="/#Destinasi">Destinasi</NavButton>
         </ul>
-        <SignButton/>
+        <Link to="/Login"> <SignButton/></Link>
+
     </nav>
   )
 }
