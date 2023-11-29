@@ -16,10 +16,6 @@ export const AuthLayout = ({ title, children }) => {
 
             <div className='flex flex-col gap-5 lg:p-10 sm:p-40 p-10 w-full h-screen lg:w-2/4 items-center justify-center'>{children}
             </div>
-        
-
-            
-        
         </div>
       </>
     );
