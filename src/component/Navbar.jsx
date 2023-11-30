@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="flex gap-3 items-center font-poppins font-bold">
             <img className="w-30 h-10 items-center"src={Logo1} alt="" />
         </div>
-        <ul className="flex gap-10 ">
+        <ul className="flex gap-10 text-lg">
             <NavButton href="/" >Beranda</NavButton>
             <NavButton href="/#Pengalaman">Pengalaman</NavButton>
             <NavButton href="/#Destinasi">Destinasi</NavButton>
