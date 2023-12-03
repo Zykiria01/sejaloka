@@ -1,31 +1,9 @@
+import ProfileLayout from "../../layout/profilelayout";
+
 const AkunSaya = () => {
   return (
-    <div className='flex items-center justify-center min-h-screen bg-gray-100'>
-      <div className='w-3/4 bg-gray-300 p-6 rounded-lg mx-60'>
-        <ul className='space-y-2'>
-          <li>
-            <a href='' className=' hover:underline font-semibold'>
-              Akun Saya
-            </a>
-          </li>
-          <li>
-            <a href='' className=' hover:underline font-semibold'>
-              To Go List Saya
-            </a>
-          </li>
-          <li>
-            <a href='' className=' hover:underline font-semibold'>
-              Ulasan Saya
-            </a>
-          </li>
-          <li>
-            <a href='' className=' hover:underline font-semibold'>
-              Tampilan
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div className='flex flex-col bg-gray-400 w-1/3 items-center justify-center p-10 rounded-lg mx-40'>
+    <ProfileLayout>
+      <div className="flex flex-col items-center justify-center w-full gap-4 p-10">
         <div className='btn btn-ghost btn-circle avatar'>
           <div className='w-16 h-16 rounded-full'>
             <img
@@ -60,7 +38,8 @@ const AkunSaya = () => {
             </tr>
         </form>
       </div>
-    </div>
+        
+    </ProfileLayout>
   );
 };
 
