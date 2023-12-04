@@ -13,7 +13,7 @@ const SectionRekomendasi = () => {
           <p>Keluarga, Kerabat Atau Rekan Kamu</p>
         </p>
       </div>
-      <div className='grid grid-cols-4 gap-4 mx-60 pb-6'>
+      <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-4 mx-60 pb-6'>
         <div className='card'>
           <figure className='pt-10'>
             <img src={Logo2} alt='' className='rounded-xl' />

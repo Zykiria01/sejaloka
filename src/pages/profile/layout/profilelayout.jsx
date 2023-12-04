@@ -1,27 +1,28 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
 const ProfileLayout = ({children}) => {
   return (
-    <div className='flex items-start justify-center  min-h-screen p-10 gap-5 pt-40'>
+    <div className='flex items-start justify-center  min-h-screen p-10 gap-5 pt-40 bg-white'>
       <div className='w-1/4 p-6 border-4 rounded-lg'>
         <ul className='space-y-5'>
           <li>
-            <Link to='/profile/account' className=' hover:underline font-semibold'>
+            <Link to='/profile/account' className='font-semibold hover:text-black'>
               Akun Saya
             </Link>
           </li>
           <li>
-            <Link to='/profile/favorite' className=' hover:underline font-semibold'>
+            <Link to='/profile/favorite' className='font-semibold hover:text-black'>
               To Go List Saya
             </Link>
           </li>
           <li>
-            <Link to='/profile/ulasan' className=' hover:underline font-semibold'>
+            <Link to='/profile/ulasan' className='font-semibold hover:text-black'>
               Ulasan Saya
             </Link>
           </li>
           <li>
-            <Link to='/profile/tampilan' className=' hover:underline font-semibold'>
+            <Link to='/profile/tampilan' className='font-semibold hover:text-black'>
               Tampilan
             </Link>
           </li>

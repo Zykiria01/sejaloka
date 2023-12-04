@@ -8,7 +8,7 @@ const TravelerReviews = () => {
             Travel Reviews
           </h1>
         </div>
-        <div className='flex gap-4 px-[133px]'>
+        <div className='flex gap-4 px-[133px] md:flex-'>
             <div className="h-[400px] shadow-lg bg-amber-400 w-1/3 ">
               <div className="">
                 <img className="overflow-hidden h-[150px] w-full mb-8" src={Logo2} alt="" />

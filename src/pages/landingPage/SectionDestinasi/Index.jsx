@@ -8,7 +8,7 @@ const SectionDestinasi = () => {
           <h1 className='font-poppins text-2xl font-semibold sm-text-2xl text-white'>
             Destinasi Yang Luar Biasa
           </h1>
-          <h2 className='text-center text-base font-sans-serif max-w-3xl self-center mb-7 text-black'>
+          <h2 className='text-center text-base font-sans-serif max-w-3xl self-center mb-7 text-black md:line-clamp-4'>
             Dengan masakannya yang unik, kekayaan budayanya, beberapa pantai
             terindah di dunia, air terjun yang mempesona, dan petualangan yang
             disukai semua orang, yang perlu Anda lakukan hanyalah memilih jenis
@@ -19,7 +19,7 @@ const SectionDestinasi = () => {
         <div>
           
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-y-1.5'>
+        <div className='grid min-[400px]:grid-cols-2 gap-y-1.5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
           <div className='group relative items-center justify-center overflow-hidden cursor-pointer rounded-sm'>
             <div className='h-50 w-52 px-2'>
               <img className='w-full object-cover' src={Logo2} alt='' />
