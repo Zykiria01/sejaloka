@@ -6,8 +6,8 @@ import Logoig from '..//assets/image/Logoig.png';
 
 const Footer = () => {
   return (
-    <footer className='flex flex-row gap-5 p-10 bg-stone-800 text-black'>
-      <nav>
+    <footer className='flex gap-5 p-10 bg-stone-800 text-black min-[400px]:flex-col lg:flex-row'>
+      <nav className='flex max-[800px]:items-center max-[800px]:justify-center '>
         <img className='flex justify-center w-40 mx-10' src={LogoWhite} />
       </nav>
       <nav>
@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
       </nav>
       <nav>
-        <div className='footer-title  text-white'>Follow Us</div>
+        <div className='footer-title text-white flex max-[800px]:text-center max-[800px]:justify-center'>Follow Us</div>
         <div className='flex justify-center gap-4 mt-5'>
           <img className='w-16 h-16' src={Logofb} alt='' />
           <img className='w-16 h-16' src={Logoyt} alt='' />
