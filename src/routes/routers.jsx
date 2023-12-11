@@ -1,7 +1,6 @@
 import { Routes, Route} from 'react-router-dom';
 import LandingPage from '../pages/landingPage/Index';
 import CityPage from '../pages/citypage/Index';
-
 import SignUpPage from '../pages/signUpPage/Index';
 import AccountPage from '../pages/profile/accountPage';
 import FavoritePage from '../pages/profile/favoritPage';

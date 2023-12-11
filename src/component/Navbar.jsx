@@ -2,6 +2,7 @@ import NavButton from './NavButton';
 import SignButton from './SignButton';
 import Logo1 from '../assets/image/logo1.png';
 import { Link } from 'react-router-dom';
+import { authService } from '../configs/auth/auth';
 
 const Navbar = () => {
   return (
@@ -10,14 +11,21 @@ const Navbar = () => {
         <img className='w-30 h-10 items-center' src={Logo1} alt='' />
       </div>
       <ul className='flex gap-10 text-lg'>
-        <NavButton href='/'>Beranda</NavButton>
-        <NavButton href='/#Pengalaman'>Pengalaman</NavButton>
-        <NavButton href='/#Destinasi'>Destinasi</NavButton>
+        <NavButton href='/landingPage'>Beranda</NavButton>
+        <NavButton href='#Pengalaman'>Pengalaman</NavButton>
+        <NavButton href='#Destinasi'>Destinasi</NavButton>
       </ul>
-      <Link to='/Login'>
-        {' '}
-        <SignButton />
-      </Link>
+      {(authService.isAuthorized()) ? (
+
+        <Link to='/profile/account'>
+            <SignButton title={'Akun Saya'} />
+          </Link>
+      ) : (
+        <Link to='/Login'>
+        <SignButton title={'Sign In'} />
+      </Link>)
+      }
+      
     </nav>
   );
 };

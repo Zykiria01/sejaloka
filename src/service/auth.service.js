@@ -34,7 +34,7 @@ export class AuthService {
         try {
             await signOut(auth);
             this.clearCredentialsFromCookie();
-            window.location.href = "/Login"
+            window.location.href = "/Unauthorized"
         } catch (err) {
             console.log(err);
         }

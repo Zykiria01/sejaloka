@@ -93,7 +93,6 @@ export const LoginPage = () => {
           <div className='flex justify-center gap-4 mt-5'>
             <img onClick={signWithFacebook} className='w-10 h-10' src={Logofb} alt='' />
             <img onClick={signInWithGoogle} className='w-10 h-10' src={Logog} alt='' />
-            <img  className='w-10 h-10' src={Logotw} alt='' />
           </div>
           <h1 className='text-center font-poppins font-medium mt-10 text-black'>
             Belum punya akun?{' '}

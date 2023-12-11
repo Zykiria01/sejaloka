@@ -1,4 +1,4 @@
-import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { googleProvider, auth, facebookProvider } from "../firebase";
 import { authService } from "../../configs/auth/auth.js";
 
@@ -15,7 +15,7 @@ export const APIAuth = {
 
   signUpWithCredentials: async ({ email, password }) => {
     try {
-      const result = await signInWithEmailAndPassword(auth, email, password);
+      const result = await createUserWithEmailAndPassword(auth, email, password);
       const { idToken, refreshToken } = result._tokenResponse;
       authService.storeCredentialsToCookie({ idToken, refreshToken });
     } catch (err) {
