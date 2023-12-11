@@ -23,7 +23,6 @@ const signUpPage = () => {
 
   const handlesignUp = async (event) => {
     event.preventDefault();
-    console.log(user);
 
     try {
       await APIAuth.signUpWithCredentials({
@@ -31,6 +30,10 @@ const signUpPage = () => {
         email: user.email,
         password: user.password,
       });
+
+      alert(
+        'Regristrasi Berhasil'
+      )
     
       navigate("/login");
     } catch (error) {

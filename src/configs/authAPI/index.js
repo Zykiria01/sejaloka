@@ -25,24 +25,20 @@ export const APIAuth = {
 
   signInWithGoogleOAuth: async () => {
     try {
-        console.log("result");
         const result = await signInWithPopup(auth, googleProvider);
         const { oauthAccessToken, refreshToken } = result._tokenResponse;
         authService.storeCredentialsToCookie({ oauthAccessToken, refreshToken });
     } catch (err) {
-        console.error(err);
         throw new Error(err);
     }
     },
 
     signInWithFacebookAuth: async () => {
         try {
-            console.log("disini")
             const result = await signInWithPopup(auth, facebookProvider )
             const { oauthAccessToken, refreshToken } = result._tokenResponse;
             authService.storeCredentialsToCookie({ oauthAccessToken, refreshToken });
         } catch (err) {
-            console.error(err);
             throw new Error(err);
         }
     }

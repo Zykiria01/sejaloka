@@ -2,6 +2,7 @@
 import Cookies from "js-cookie";
 import { signOut } from "firebase/auth"
 import { auth } from "../configs/firebase"
+import Swal from "sweetalert2";
 
 export class AuthService {
     isAuthorized() {
@@ -34,9 +35,29 @@ export class AuthService {
         try {
             await signOut(auth);
             this.clearCredentialsFromCookie();
-            window.location.href = "/Unauthorized"
+            await Swal.fire({
+                title: "Anda Ingin Keluar?",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes"
+              }).then((result) => {
+                if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Berhasil Keluar!",
+                    icon: "success"
+                  });
+                  window.location.href = "/landingPage"
+                }
+              });
+              
         } catch (err) {
-            console.log(err);
+            await Swal.fire({
+                icon: "error",
+                title: "Log out Gagal",
+                text: "Anda gagal keluar dari akun Anda!",
+              });
         }
         
     }

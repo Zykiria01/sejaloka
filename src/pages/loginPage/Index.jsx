@@ -1,6 +1,5 @@
 import { AuthLayout } from '../../component/Layouts/AuthLayout';
 import Logofb from '../../assets/image/Logofb.png';
-import Logotw from '../../assets/image/Logotw.png';
 import Logog from '../../assets/image/Logog.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
@@ -31,8 +30,10 @@ export const LoginPage = () => {
       });
     
       navigate("/City");
+      alert("login success");
     } catch (error) {
       console.log(error);
+      alert("Username atau Password Salah");
     }
   }
 
