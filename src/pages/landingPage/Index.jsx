@@ -7,7 +7,7 @@ import TravelerReviews from './TravelerReviews';
 import Footer from '../../component/Footer';
 import Logo2 from '../../assets/image/logo2.jpg'
 
-const landingPage = () => {
+const LandingPage = () => {
   return (
     <>
       <MainLayout>
@@ -22,4 +22,4 @@ const landingPage = () => {
   );
 };
 
-export default landingPage;
+export default LandingPage;

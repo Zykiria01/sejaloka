@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
+import { authService } from "../../../configs/auth/auth";
 
 const ProfileLayout = ({children}) => {
   return (
@@ -27,7 +28,7 @@ const ProfileLayout = ({children}) => {
             </Link>
           </li>
           <li>
-            <button className="font-bold text-red-600 pt-5">Keluar</button>
+            <button onClick={() => authService.logOut()} className="font-bold text-red-600 pt-5">Keluar</button>
           </li>
         </ul>
       </div>

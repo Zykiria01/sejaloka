@@ -38,17 +38,6 @@ const signUpPage = () => {
             className='text-left font-bold pl-1 text-black text-lg'
             htmlFor=''
           >
-            Domisili
-          </label>
-          <input
-            className='border-2 w-full p-2 rounded-xl shadow-lg pl-7 bg-white'
-            type='text'
-            placeholder='Tempat Kamu Tinggal Saat ini'
-          />
-          <label
-            className='text-left font-bold pl-1 text-black text-lg'
-            htmlFor=''
-          >
             Password
           </label>
           <input

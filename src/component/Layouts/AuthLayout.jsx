@@ -9,7 +9,7 @@ export const AuthLayout = ({ title, children }) => {
       <div className='flex flex-col md:flex-row w-full mx-0 bg-white'>
         <div className='w-3/4 relative hidden lg:block'>
           <img className='object-cover h-screen' src={Logo2} alt='' />
-          <div className='flex w-full items-center justify-center absolute top-[50%]'>
+          <div className='flex w-full items-center justify-center absolute top-10'>
             <img className='w-80' src={Logo5} alt='' />
           </div>
         </div>
