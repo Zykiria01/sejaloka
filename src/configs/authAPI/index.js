@@ -13,6 +13,16 @@ export const APIAuth = {
     }
   },
 
+  signUpWithCredentials: async ({ email, password }) => {
+    try {
+      const result = await signInWithEmailAndPassword(auth, email, password);
+      const { idToken, refreshToken } = result._tokenResponse;
+      authService.storeCredentialsToCookie({ idToken, refreshToken });
+    } catch (err) {
+      throw new Error(err);
+    }
+  },
+
   signInWithGoogleOAuth: async () => {
     try {
         console.log("result");
