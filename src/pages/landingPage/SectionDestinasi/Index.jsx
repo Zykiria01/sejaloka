@@ -44,7 +44,7 @@ const SectionDestinasi = () => {
           </h2>
         </div>
 
-        <div className='grid min-[400px]:grid-cols-2 gap-y-1.5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+        <div className='grid min-[400px]:grid-cols-2 gap-y-1.5 md:grid-cols-3 lg:grid-cols-4'>
           {CardDestinasi.map((item, index) => (
             <div
               className='group relative items-center justify-center overflow-hidden cursor-pointer rounded-sm'
