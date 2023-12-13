@@ -1,23 +1,22 @@
-
 // eslint-disable-next-line react/prop-types
-const Header = ({search = true, image, title, placeholder}) => {
+const Header = ({ search = true, image, title, placeholder }) => {
   return (
     <section id='Header'>
-      <div className='hero min-h-screen' style={{backgroundImage: `url(${image})`}}>
+      <div
+        className='hero min-h-screen'
+        style={{ backgroundImage: `url(${image})` }}
+      >
         <div className='hero-content text-center text-neutral-content'>
           <div className='max-w-l'>
-          <h1></h1>
-            <h1 className='mb-5 text-5xl font-bold text-white'>
-              {title}
-            </h1>
+            <h1 className='mb-5 text-5xl font-bold text-white'>{title}</h1>
             <label
               htmlFor='default-search'
               className='mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white'
             >
               Search
             </label>
-            {
-                (search) && <div className='relative'>
+            {search && (
+              <div className='relative'>
                 <div className='absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none'>
                   <svg
                     className='w-4 h-4 text-gray-500 dark:text-gray-400'
@@ -38,7 +37,7 @@ const Header = ({search = true, image, title, placeholder}) => {
                 <input
                   type='search'
                   id='default-search'
-                  className='block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-xl bg-gray-20 focus:ring-black focus:border-black dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+                  className='block w-full p-4 ps-10 text-sm text-black border rounded-xl bg-gray-20 bg-white'
                   placeholder={placeholder}
                   required
                 />
@@ -49,7 +48,7 @@ const Header = ({search = true, image, title, placeholder}) => {
                   Search
                 </button>
               </div>
-            }
+            )}
           </div>
         </div>
       </div>{' '}

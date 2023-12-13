@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from 'react';
 import { AuthLayout } from '../../component/Layouts/AuthLayout';
 import { Link, useNavigate } from 'react-router-dom';
@@ -6,20 +7,20 @@ import { APIAuth } from '../../configs/authAPI';
 const signUpPage = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState({
-    nama : "",
-    email : "",
-    password : "",
+    nama: '',
+    email: '',
+    password: '',
   });
 
   const handleName = (event) => {
-    setUser({...user, nama: event.target.value});
-  }
+    setUser({ ...user, nama: event.target.value });
+  };
   const handleEmail = (event) => {
-    setUser({...user, email: event.target.value});
-  }
+    setUser({ ...user, email: event.target.value });
+  };
   const handlePassword = (event) => {
-    setUser({...user, password: event.target.value});
-  }
+    setUser({ ...user, password: event.target.value });
+  };
 
   const handlesignUp = async (event) => {
     event.preventDefault();
@@ -31,15 +32,13 @@ const signUpPage = () => {
         password: user.password,
       });
 
-      alert(
-        'Regristrasi Berhasil'
-      )
-    
-      navigate("/login");
+      alert('Regristrasi Berhasil');
+
+      navigate('/login');
     } catch (error) {
       console.log(error);
     }
-  }
+  };
   return (
     <AuthLayout>
       <h1 className='text-black font-bold font-poppins text-center text-2xl'>
@@ -49,7 +48,11 @@ const signUpPage = () => {
         Daftarkan Akunmu
       </p>
       <div className='w-full'>
-        <form onSubmit={handlesignUp} className='flex flex-col gap-2' action='submit'>
+        <form
+          onSubmit={handlesignUp}
+          className='flex flex-col gap-2'
+          action='submit'
+        >
           <label
             className='text-left font-bold pl-1 text-black text-lg'
             htmlFor=''

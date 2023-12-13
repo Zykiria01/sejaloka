@@ -8,16 +8,16 @@ import { APIAuth } from '../../configs/authAPI';
 export const LoginPage = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState({
-    email : "",
-    password : "",
+    email: '',
+    password: '',
   });
 
   const handleEmail = (event) => {
-    setUser({...user, email: event.target.value});
-  }
+    setUser({ ...user, email: event.target.value });
+  };
   const handlePassword = (event) => {
-    setUser({...user, password: event.target.value});
-  }
+    setUser({ ...user, password: event.target.value });
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -28,34 +28,34 @@ export const LoginPage = () => {
         email: user.email,
         password: user.password,
       });
-    
-      navigate("/City");
-      alert("login success");
+
+      navigate('/landingPage');
+      alert('login success');
     } catch (error) {
       console.log(error);
-      alert("Username atau Password Salah");
+      alert('Username atau Password Salah');
     }
-  }
+  };
 
   const signInWithGoogle = async () => {
-		try {
-			await APIAuth.signInWithGoogleOAuth();
-			alert("login successful");
-			navigate("/city");
-		} catch (error) {
-			console.log(error);
-		}
-	};
+    try {
+      await APIAuth.signInWithGoogleOAuth();
+      alert('login successful');
+      navigate('/landingPage');
+    } catch (error) {
+      console.log(error);
+    }
+  };
   const signWithFacebook = async () => {
-		try {
-			await APIAuth.signInWithFacebookAuth();
-			alert("login successful");
-			navigate("/city");
-		} catch (error) {
-			console.log(error);
-		}
-	};
-  
+    try {
+      await APIAuth.signInWithFacebookAuth();
+      alert('login successful');
+      navigate('/landingPage');
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <AuthLayout>
       <h1 className='text-black font-bold font-poppins text-center text-2xl'>
@@ -65,7 +65,11 @@ export const LoginPage = () => {
         Masuk ke Akunmu
       </p>
       <div className='w-full'>
-        <form onSubmit={handleSubmit} className='flex flex-col gap-4 items-center' action='submit'>
+        <form
+          onSubmit={handleSubmit}
+          className='flex flex-col gap-4 items-center'
+          action='submit'
+        >
           <input
             className='border-2 w-3/4 p-2 rounded-xl shadow-lg bg-white'
             type='text'
@@ -75,7 +79,7 @@ export const LoginPage = () => {
           />
           <input
             className='border-2 w-3/4 p-2 rounded-xl shadow-lg bg-white'
-            type='text'
+            type='password'
             placeholder='Password'
             value={user.password}
             onChange={handlePassword}
@@ -92,8 +96,18 @@ export const LoginPage = () => {
             Atau Masuk Dengan
           </h1>
           <div className='flex justify-center gap-4 mt-5'>
-            <img onClick={signWithFacebook} className='w-10 h-10' src={Logofb} alt='' />
-            <img onClick={signInWithGoogle} className='w-10 h-10' src={Logog} alt='' />
+            <img
+              onClick={signWithFacebook}
+              className='w-10 h-10 cursor-pointer'
+              src={Logofb}
+              alt=''
+            />
+            <img
+              onClick={signInWithGoogle}
+              className='w-10 h-10 cursor-pointer'
+              src={Logog}
+              alt=''
+            />
           </div>
           <h1 className='text-center font-poppins font-medium mt-10 text-black'>
             Belum punya akun?{' '}
@@ -106,4 +120,3 @@ export const LoginPage = () => {
     </AuthLayout>
   );
 };
-
