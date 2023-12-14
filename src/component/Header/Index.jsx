@@ -1,5 +1,12 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line react/prop-types
-const Header = ({ search = true, image, title, placeholder }) => {
+const Header = ({
+  search = true,
+  image,
+  title,
+  placeholder,
+  showing = true,
+}) => {
   return (
     <section id='Header'>
       <div
@@ -34,19 +41,23 @@ const Header = ({ search = true, image, title, placeholder }) => {
                     />
                   </svg>
                 </div>
-                <input
-                  type='search'
-                  id='default-search'
-                  className='block w-full p-4 ps-10 text-sm text-black border rounded-xl bg-gray-20 bg-white'
-                  placeholder={placeholder}
-                  required
-                />
-                <button
-                  type='submit'
-                  className='text-white absolute end-2.5 bottom-2.5 bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700'
-                >
-                  Search
-                </button>
+                {showing && (
+                  <>
+                    <input
+                      type='search'
+                      id='default-search'
+                      className='block w-full p-4 ps-10 text-sm text-black border rounded-xl bg-gray-20 bg-white'
+                      placeholder={placeholder}
+                      required
+                    />
+                    <button
+                      type='submit'
+                      className='text-white absolute end-2.5 bottom-2.5 bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700'
+                    >
+                      Search
+                    </button>
+                  </>
+                )}
               </div>
             )}
           </div>
