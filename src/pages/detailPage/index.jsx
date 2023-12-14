@@ -2,7 +2,6 @@ import { MainLayout } from '../../component/Layouts';
 import Navbar from '../../component/Navbar';
 import Header from '../../component/Header/Index';
 import Footer from '../../component/Footer';
-import RuangSejarahKehidupan from '../../assets/image/Ruang-Sejarah-Kehidupan.jpg';
 import Logofb from '../../assets/image/logofb.png';
 import {  useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -55,6 +54,7 @@ const DetailPage = () => {
       <MainLayout>
         <Navbar />
         <Header image={placeData.url} />
+
         <div className='bg-white'>
           <div className='items-center justify-center flex'>
             <div className='w-11/12 flex flex-col mt-5 sm:flex-row'>
