@@ -21,7 +21,7 @@ const routers = () => {
       </Route>
       <Route path='/' element={<Private />}>
         <Route path='/City' element={<CityPage />} />
-        <Route path='/detailpage' element={<DetailPage />} />
+        <Route path='/detailpage/:id' element={<DetailPage />} />
         <Route path='/profile/account' element={<AccountPage />} />
         <Route path='/profile/favorite' element={<FavoritePage />} />
         <Route path='/profile/ulasan' element={<UlasanPage />} />

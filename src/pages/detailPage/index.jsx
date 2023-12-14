@@ -4,6 +4,10 @@ import Header from '../../component/Header/Index';
 import Footer from '../../component/Footer';
 import RuangSejarahKehidupan from '../../assets/image/Ruang-Sejarah-Kehidupan.jpg';
 import Logofb from '../../assets/image/logofb.png';
+import {  useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { db } from '../../configs/firebase';
+import { doc, getDoc } from 'firebase/firestore';
 
 const Reviews = [
   {
@@ -24,11 +28,33 @@ const Reviews = [
 ];
 
 const DetailPage = () => {
+  const [ placeData, setPlace ] = useState();
+  const { id } = useParams();
+  const fetchPlaceDetails = async () => {
+    const placeRef = await doc(db, "Informasi-Wisata", `${id}`);
+    const placeDoc = await getDoc(placeRef);
+    if (placeDoc.exists()) {
+      const place = placeDoc.data();
+      return place;
+    } else {
+      console.log('Document does not exist');
+      return null; // or handle the case where the document doesn't exist
+    }
+  }
+  
+  useEffect(() => {
+    fetchPlaceDetails()
+    .then((res) => {
+      setPlace(res)
+    })
+    .catch((err) => console.error(err))
+  })
+
   return (
     <>
       <MainLayout>
         <Navbar />
-        <Header image={RuangSejarahKehidupan} />
+        <Header image={placeData.url} />
 
         <div className='bg-white'>
           <div className='flex items-center justify-center'>
