@@ -29,7 +29,7 @@ export const LoginPage = () => {
         password: user.password,
       });
 
-      navigate('/landingPage');
+      navigate('/');
       alert('login success');
     } catch (error) {
       console.log(error);
@@ -41,7 +41,7 @@ export const LoginPage = () => {
     try {
       await APIAuth.signInWithGoogleOAuth();
       alert('login successful');
-      navigate('/landingPage');
+      navigate('/');
     } catch (error) {
       console.log(error);
     }
@@ -50,7 +50,7 @@ export const LoginPage = () => {
     try {
       await APIAuth.signInWithFacebookAuth();
       alert('login successful');
-      navigate('/landingPage');
+      navigate('/');
     } catch (error) {
       console.log(error);
     }

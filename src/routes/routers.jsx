@@ -17,7 +17,7 @@ const routers = () => {
   return (
     <Routes>
       <Route path='/' element={<PrivateRoute />}>
-        <Route path='/landingPage' element={<LandingPage />} />
+        <Route path='/' element={<LandingPage />} />
       </Route>
       <Route path='/' element={<Private />}>
         <Route path='/City' element={<CityPage />} />
