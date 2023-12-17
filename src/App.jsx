@@ -1,12 +1,16 @@
 /* eslint-disable no-unused-vars */
-import { useState } from 'react';
-import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import Routers from './routes/routers';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
+Aos.init();
 
 function App() {
   return (
-    <>
-      <h1 className='text-3xl font-bold underline'>Hello world!</h1>
-    </>
+    <BrowserRouter>
+      <Routers />
+    </BrowserRouter>
   );
 }
 
