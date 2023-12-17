@@ -1,6 +1,6 @@
 import { AuthLayout } from '../../component/Layouts/AuthLayout';
-import Logofb from '../../assets/image/Logofb.png';
-import Logog from '../../assets/image/Logog.png';
+import Logofb from '../../assets/image/logofb.png';
+import Logog from '../../assets/image/logog.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { APIAuth } from '../../configs/authAPI';
