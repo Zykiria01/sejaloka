@@ -1,8 +1,8 @@
 import LogoWhite from '../assets/image/Sejaloka-Logogram-Only-White.png';
 import Logofb from '../assets/image/logofb.png';
 import Logotw from '../assets/image/logotw.png';
-import Logoyt from '..//assets/image/Logoyt.png';
-import Logoig from '..//assets/image/Logoig.png';
+import Logoyt from '../assets/image/logoyt.png';
+import Logoig from '../assets/image/logoig.png';
 
 const Footer = () => {
   return (
@@ -20,7 +20,9 @@ const Footer = () => {
         </div>
       </nav>
       <nav>
-        <div className='footer-title text-white flex max-[800px]:text-center max-[800px]:justify-center'>Follow Us</div>
+        <div className='footer-title text-white flex max-[800px]:text-center max-[800px]:justify-center'>
+          Follow Us
+        </div>
         <div className='flex justify-center gap-4 mt-5'>
           <img className='w-16 h-16' src={Logofb} alt='' />
           <img className='w-16 h-16' src={Logoyt} alt='' />
