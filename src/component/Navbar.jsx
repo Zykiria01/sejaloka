@@ -11,7 +11,7 @@ const Navbar = () => {
         <img className='w-30 h-10 items-center' src={Logo1} alt='' />
       </div>
       <ul className='flex gap-10 text-lg'>
-        <NavButton href='/landingPage'>Beranda</NavButton>
+        <NavButton href='/'>Beranda</NavButton>
         <NavButton href='#Pengalaman'>Pengalaman</NavButton>
         <NavButton href='#Destinasi'>Destinasi</NavButton>
       </ul>
