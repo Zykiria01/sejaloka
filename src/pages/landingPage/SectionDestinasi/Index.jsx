@@ -64,7 +64,7 @@ const SectionDestinasi = () => {
             <div className='absolute inset-0  bg-gradiant-to-b form-transparent via-transparent'>
               <div className='absolute inset-0 flex flex-col items-center justify-center px-4 text-center translate-y-[100%] group-hover:translate-y-5 transition-all'>
                 <button className='rounded-full bg-orange-800 py-2 px-3.5 text-sm capitalize text-white justify-beetwen'>
-                  <Link to={`/detailPage/${e.firestoreId}`}> See More </Link>
+                  <Link to={`/detailpage/:id ${e.firestoreId}`}> See More </Link>
                 </button>
               </div>
             </div>

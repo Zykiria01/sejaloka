@@ -115,6 +115,9 @@ export const LoginPage = () => {
               <Link to='/SignUp'>Daftar Disini</Link>
             </span>
           </h1>
+          <h1 className='text-center font-poppins font-medium mt-10 text-black hover:text-red-600 hover:underline'>
+            <Link to='/'>Ke Beranda</Link>
+          </h1>
         </div>
       </div>
     </AuthLayout>
