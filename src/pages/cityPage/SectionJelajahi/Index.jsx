@@ -1,4 +1,5 @@
 import Logo2 from '../../../assets/image/logo2.jpg';
+import { Link } from 'react-router-dom';
 
 const CardJelajahi = [
   {
@@ -48,7 +49,7 @@ const SectionJelajahi = () => {
               </h2>
               <div className='card-actions'>
                 <button className='btn bg-amber-400 border-0 text-black hover:text-white'>
-                  Selengkapnya
+                <Link to='/detailpage/:id'>Selengkapnya</Link>
                 </button>
               </div>
             </div>

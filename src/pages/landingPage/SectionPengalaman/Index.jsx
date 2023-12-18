@@ -1,4 +1,5 @@
 import Logo2 from '../../../assets/image/logo2.jpg';
+import { Link } from 'react-router-dom';
 
 const CardPengalaman = [
   {
@@ -50,7 +51,7 @@ const SectionPengalaman = () => {
               <div className='absolute inset-0  bg-gradiant-to-b form-transparent via-transparent'>
                 <div className='absolute inset-0 flex flex-col items-center justfify-center px-4 text-center translate-y-[100%] group-hover:translate-y-20 transition-all'>
                   <button className='rounded-full bg-orange-800 py-2 px-3.5 text-sm capitalize text-white justify-beetwen'>
-                    See More
+                  <Link to='/City'>See More</Link>
                   </button>
                 </div>
               </div>
