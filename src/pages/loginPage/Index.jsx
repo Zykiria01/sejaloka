@@ -1,6 +1,6 @@
 import { AuthLayout } from '../../component/Layouts/AuthLayout';
-import Logofb from '../../assets/image/Logofb.png';
-import Logog from '../../assets/image/Logog.png';
+import Logofb from '../../assets/image/logofb.png';
+import Logog from '../../assets/image/logog.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { APIAuth } from '../../configs/authAPI';
@@ -29,7 +29,7 @@ export const LoginPage = () => {
         password: user.password,
       });
 
-      navigate('/landingPage');
+      navigate('/');
       alert('login success');
     } catch (error) {
       console.log(error);
@@ -41,7 +41,7 @@ export const LoginPage = () => {
     try {
       await APIAuth.signInWithGoogleOAuth();
       alert('login successful');
-      navigate('/landingPage');
+      navigate('/');
     } catch (error) {
       console.log(error);
     }
@@ -50,7 +50,7 @@ export const LoginPage = () => {
     try {
       await APIAuth.signInWithFacebookAuth();
       alert('login successful');
-      navigate('/landingPage');
+      navigate('/');
     } catch (error) {
       console.log(error);
     }
