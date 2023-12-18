@@ -9,13 +9,13 @@ const Togolist = () => {
           <DotIcon/> Museum Geologi Bandung
         </li>
         <li className="text-black flex font-bold">
-          <DotIcon/> Museum Geologi Bandung
+          <DotIcon/> Museum Asia Afrika
         </li>
         <li className="text-black flex font-bold">
-          <DotIcon/> Museum Geologi Bandung
+          <DotIcon/> Museum Fatahillah
         </li>
         <li className="text-black flex font-bold">
-          <DotIcon/> Museum Geologi Bandung
+          <DotIcon/> Museum Nasional
         </li>
       </ul>
       
