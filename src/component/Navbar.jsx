@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className='gap-3 items-center font-poppins font-bold'>
         <img className='w-20 h-7 md:w-30 md:h-10 items-center' src={Logo1} alt='' />
       </div>
-      <div className=''>
+      <div className='hidden'>
         <div className='flex'>
           <ul className='flex gap-10 text-lg'>
             <NavButton href='/landingPage'>Beranda</NavButton>
@@ -27,6 +27,9 @@ const Navbar = () => {
           </Link>
         )}
         </div>
+      </div>
+      <div>
+        
       </div>
       
     </nav>
